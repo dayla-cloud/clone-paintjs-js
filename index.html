@@ -8,6 +8,26 @@
     <title>Painting Board</title>
   </head>
   <body>
+    <canvas id="jsCanvas" class="canvas"></canvas>
+    <div class="controls">
+      <div class="controls__range">
+        <input type="range" id="jsRange" min="1" max="10" value="5" steps="1" />
+      </div>
+      <div class="controls__btns">
+        <button id="jsMode">Fill</button>
+        <button id="jsSave">Save</button>
+      </div>
+      <div class="controls__colors" id="jsColors">
+        <div class="controls_color" style="background-color: #000000"></div>
+        <div class="controls_color" style="background-color: #ffffff"></div>
+        <div class="controls_color" style="background-color: #ff0000"></div>
+        <div class="controls_color" style="background-color: #daa520"></div>
+        <div class="controls_color" style="background-color: #008000"></div>
+        <div class="controls_color" style="background-color: #ffd700"></div>
+        <div class="controls_color" style="background-color: #a52a2a"></div>
+        <div class="controls_color" style="background-color: #a7dbec"></div>
+      </div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
