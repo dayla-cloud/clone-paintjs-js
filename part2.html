@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="part2.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+
+    <div class="button-group">
+      <button onclick='changeColor("black")'>Black</button>
+      <button onclick='changeColor("blue")'>Blue</button>
+      <button onclick='changeColor("red")'>Red</button>
+
+      <input
+        onchange="changeWidth(this.value)"
+        type="range"
+        min="1"
+        max="10"
+        value="2"
+      />
+      <button onclick="resetCanvas()">Reset</button>
+      <button onclick="erase()">Eraser</button>
+    </div>
+    <script src="./part2.js"></script>
+  </body>
+</html>
